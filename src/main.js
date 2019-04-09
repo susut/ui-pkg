@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Index from './index.vue';
-// import FdUI from 'ui-pkg';
-import FdUI from '../packages/index.js';
+import FdUI from 'ui-pkg';
+// import FdUI from '../packages/index.js';
 
 Vue.use(FdUI);
 

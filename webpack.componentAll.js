@@ -9,7 +9,9 @@ let dev = merge(common, {
     },
     output: {
         path: path.resolve(__dirname, './lib'),
-        filename: '[name].js'
+        filename: '[name].js',
+        library: 'ui',
+        libraryTarget: 'umd'
     },
     plugins: [
         new CleanWebpackPlugin()
