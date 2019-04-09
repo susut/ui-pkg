@@ -14,7 +14,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/susut/test-package.git"
+    "url": "https://github.com/susut/ui-pkg.git"
   },
   "dependencies": {
     "vue": "^2.6.10"
