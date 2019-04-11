@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <img class="img" src="./assets/img/banner.png" alt="banner">
-        <fd-button type="primary">嘻嘻</fd-button>
+        <fd-button type="danger">嘻嘻</fd-button>
     </div>
 </template>
 

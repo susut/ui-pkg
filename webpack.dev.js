@@ -5,6 +5,7 @@ const common = require('./webpack.common.js');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 let dev = merge(common, {
+    mode: 'development',
     entry: {
         'index': path.join(__dirname, 'src', 'main.js')
     },
