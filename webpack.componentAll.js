@@ -3,7 +3,7 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-let dev = merge(common, {
+let conf = merge(common, {
     mode: 'production',
     entry: {
         'index': path.join(__dirname, 'packages', 'index.js')
@@ -18,4 +18,4 @@ let dev = merge(common, {
         new CleanWebpackPlugin()
     ]
 });
-module.exports = dev;
+module.exports = conf;

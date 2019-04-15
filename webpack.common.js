@@ -24,7 +24,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    devMode ? "style-loader" : MiniCssExtractPlugin.loader,
+                    devMode ? "style-loader" : MiniCssExtractPlugin.loader, // 分离样式
                     "css-loader", // translates CSS into CommonJS
                     "sass-loader" // compiles Sass to CSS, using Node Sass by default
                 ]
