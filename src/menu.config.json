@@ -1,0 +1,31 @@
+{
+  "开发指南": [
+    {
+      "path": "/",
+      "redirect": "/installation"
+    },
+    {
+      "desc": "安装",
+      "path": "/installation",
+      "name": "installation"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "基础组件",
+      "path": "/",
+      "items": [
+        {
+          "desc": "Color 色彩",
+          "path": "/color",
+          "name": "color"
+        },
+        {
+          "desc": "Button 按钮",
+          "path": "/button",
+          "name": "button"
+        }
+      ]
+    }
+  ]
+}

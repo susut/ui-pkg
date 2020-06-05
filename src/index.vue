@@ -1,13 +1,17 @@
 <template>
-    <div class="wrapper">
-        <img class="img" src="./assets/img/banner.png" alt="banner">
-        <fd-button type="danger">嘻嘻</fd-button>
+    <div>
+        <Nav />
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
+    import Nav from '@/layout/nav';
 export default {
-    name: 'index'
+    name: 'index',
+    components: {
+        Nav
+    }
 }
 </script>
 

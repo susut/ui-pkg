@@ -6,10 +6,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 let conf = merge(common, {
     mode: 'production',
     entry: {
-        'index': path.join(__dirname, 'packages', 'index.js')
+        'index': path.join(__dirname, '../packages', 'index.js')
     },
     output: {
-        path: path.resolve(__dirname, './lib'),
+        path: path.resolve(__dirname, '../lib'),
         filename: '[name].js',
         library: 'ui-pkg',
         libraryTarget: 'umd'

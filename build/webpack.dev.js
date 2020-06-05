@@ -7,20 +7,22 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 let dev = merge(common, {
     mode: 'development',
     entry: {
-        'index': path.join(__dirname, 'src', 'main.js')
+        'index': path.join(__dirname, '../src', 'main.js')
     },
     output: {
-        path: path.resolve(__dirname, './dist'),
-        filename: '[name].[chunkhash].js'
+        path: path.resolve(__dirname, '../dist'),
+        filename: '[name].[hash].js'
     },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve('./src/index.html')
-        }) 
+        })
     ],
     devServer: {
-        contentBase: path.join(__dirname, "dist")
+        contentBase: path.join(__dirname, "../dist"),
+        hot: true,
+        overlay: true
     }
 });
 module.exports = dev;
