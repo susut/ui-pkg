@@ -1,12 +1,12 @@
 <template>
-    <button class="fd-button" :class="[type]">
+    <button class="ui-button" :class="[type]">
         <slot></slot>
     </button>
 </template>
 
 <script>
 export default {
-    name: "fd-button",
+    name: "ui-button",
     props: {
         type: {
             type: String,
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .fd-button {
+    .ui-button {
         color: gray;
         &.primary {
             color: lightblue;

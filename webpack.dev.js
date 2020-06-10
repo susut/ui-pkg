@@ -11,13 +11,13 @@ let dev = merge(common, {
     },
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: '[name].[chunkhash].js'
+        filename: '[name].[hash].js'
     },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: path.resolve('./src/index.html')
-        }) 
+        })
     ],
     devServer: {
         contentBase: path.join(__dirname, "dist")

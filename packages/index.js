@@ -1,18 +1,18 @@
-import FdButton from "./button/index.js";
+import UiButton from "./button/index.js";
 
 const components = [
-    FdButton
+    UiButton
 ];
-const FdUI = {
-    FdButton
+const Ui = {
+    UiButton
 }
 
-FdUI.install = Vue => {
+Ui.install = Vue => {
     components.forEach(component => Vue.component(component.name, component));
 };
 
-export default FdUI;
+export default Ui;
 
 export {
-    FdButton
+    UiButton
 }

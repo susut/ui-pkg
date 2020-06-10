@@ -1,7 +1,7 @@
-import FdButton from './button.vue';
+import UiButton from './button.vue';
 
-FdButton.install = function(Vue) {
-    Vue.component(FdButton.name, FdButton);
+UiButton.install = function(Vue) {
+    Vue.component(UiButton.name, UiButton);
 };
 
-export default FdButton;
+export default UiButton;
