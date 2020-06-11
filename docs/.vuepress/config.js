@@ -1,9 +1,6 @@
 module.exports = {
     title: 'ui-pkg',
     description: 'test ui pkg',
-    extraWatchFiles: [
-        'element/button.md'
-    ],
     themeConfig: {
         nav: [
             { text: 'External', link: 'https://google.com' }
