@@ -1,5 +1,5 @@
 # ui-pkg
-
+仿Element UI从0搭建，使用vuepress书写文档
 
 ## 项目初始化
 - `packages/`放置各种UI组件模块
